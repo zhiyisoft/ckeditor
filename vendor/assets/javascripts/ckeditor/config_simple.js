@@ -1,6 +1,7 @@
 CKEDITOR.editorConfig = function(config){
     config.language='zh-cn';
     config.toolbar ="Simple";
+    config.filebrowserUploadUrl="/uploads/upload"; /*图片上传地址 */
     config.toolbar_Simple =
 	[
 	    ['Source','Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
@@ -12,9 +13,3 @@ CKEDITOR.editorConfig = function(config){
 	];
 
 }
-/*
-CKEDITOR.replace('ckeditor',{filebrowserUploadUrl : '/ckeditor/ckeditor/uploader?Type=File',
-filebrowserImageUploadUrl : '/ckeditor/ckeditor/uploader?Type=Image',
-filebrowserFlashUploadUrl : '/ckeditor/ckeditor/uploader?Type=Flash'
-        });
-*/%
